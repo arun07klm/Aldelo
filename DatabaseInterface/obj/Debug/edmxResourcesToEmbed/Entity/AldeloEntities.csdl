@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AldeloModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="passwordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="passwordSalt" Type="Guid" />
+    <Property Name="AuthCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Company_Account" FromRole="Account" ToRole="Company" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Name="AddressId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddressLine1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Company_Address" FromRole="Address" ToRole="Company" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddressId" Type="Int32" Nullable="false" />
+    <Property Name="AccountId" Type="Int32" Nullable="false" />
+    <Property Name="PasswordExpireOn" Type="DateTime" Precision="0" />
+    <Property Name="DBFolderPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="Account" Relationship="Self.FK_Company_Account" FromRole="Company" ToRole="Account" />
+    <NavigationProperty Name="Address" Relationship="Self.FK_Company_Address" FromRole="Company" ToRole="Address" />
+    <NavigationProperty Name="CompanyMenuList" Relationship="Self.FK_CompanyMenuList_Company" FromRole="Company" ToRole="CompanyMenuList" />
+  </EntityType>
+  <EntityType Name="CompanyMenuList">
+    <Key>
+      <PropertyRef Name="CompanyMenuListId" />
+    </Key>
+    <Property Name="CompanyMenuListId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_CompanyMenuList_Company" FromRole="CompanyMenuList" ToRole="Company" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_CompanyMenuList_Menu" FromRole="CompanyMenuList" ToRole="Menu" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Path" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Logo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Style" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="CompanyMenuList" Relationship="Self.FK_CompanyMenuList_Menu" FromRole="Menu" ToRole="CompanyMenuList" />
+  </EntityType>
+  <Association Name="FK_Company_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyMenuList_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="CompanyMenuList" Type="Self.CompanyMenuList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="CompanyMenuList">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyMenuList_Menu">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="CompanyMenuList" Type="Self.CompanyMenuList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="CompanyMenuList">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AldeloEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Account" EntityType="Self.Account" />
+    <EntitySet Name="Address" EntityType="Self.Address" />
+    <EntitySet Name="Company" EntityType="Self.Company" />
+    <EntitySet Name="CompanyMenuList" EntityType="Self.CompanyMenuList" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" />
+    <AssociationSet Name="FK_Company_Account" Association="Self.FK_Company_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_Address" Association="Self.FK_Company_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyMenuList_Company" Association="Self.FK_CompanyMenuList_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyMenuList_Menu" Association="Self.FK_CompanyMenuList_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="86e0febf9ab34e1cadcc08e3fe0277fa" Name="Diagram1">
+        <EntityTypeShape EntityType="AldeloModel.Account" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldeloModel.Address" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldeloModel.Company" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldeloModel.CompanyMenuList" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldeloModel.Menu" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="AldeloModel.FK_Company_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="AldeloModel.FK_Company_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="AldeloModel.FK_CompanyMenuList_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="AldeloModel.FK_CompanyMenuList_Menu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
