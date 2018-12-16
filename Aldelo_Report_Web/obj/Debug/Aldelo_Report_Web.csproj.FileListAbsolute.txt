@@ -1,0 +1,367 @@
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\csc.exe
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Collections.Immutable.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\vbc.exe
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe.config
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll.config
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.pdb
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Owin.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\WebGrease.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.pdb
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.csprojResolveAssemblyReference.cache
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.pdb
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Project\Aldelo_WEB\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\csc.exe
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Collections.Immutable.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Reflection.Metadata.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\vbc.exe
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe.config
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll.config
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.pdb
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Agent.Intercept.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Web.Infrastructure.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Owin.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\WebGrease.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.pdb
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.dll
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.pdb
+G:\host\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.csprojResolveAssemblyReference.cache
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\csc.exe
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\vbc.exe
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll.config
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.pdb
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Owin.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\WebGrease.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.pdb
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.dll
+D:\Programing Area\Project\c#-Area\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.pdb
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\csc.exe
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Collections.Immutable.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\System.Reflection.Metadata.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\vbc.exe
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\roslyn\VBCSCompiler.exe.config
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll.config
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Aldelo_Report_Web.pdb
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Web.Infrastructure.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Owin.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\WebGrease.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.DependencyCollector.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.PerfCounterCollector.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.Web.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AI.WindowsServer.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.ApplicationInsights.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Diagnostics.DiagnosticSource.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Helpers.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Mvc.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Optimization.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Razor.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Deployment.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.WebPages.Razor.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Antlr3.Runtime.pdb
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Newtonsoft.Json.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Net.Http.Formatting.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\System.Web.Http.WebHost.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\EntityFramework.SqlServer.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Google.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.csprojResolveAssemblyReference.cache
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.dll
+G:\Projects\Aldelo (2)\Aldelo\Aldelo_Report_Web\Aldelo_Report_Web\obj\Debug\Aldelo_Report_Web.pdb

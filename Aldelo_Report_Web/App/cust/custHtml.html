@@ -1,0 +1,40 @@
+﻿<div>
+    
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5"><input type="button" ng-click="print()" /> </div>
+            </div>
+
+            <div class="card-body table-responsive p-0" ng-init="getAllCust()"  >
+                <table class="table table-hover" id="exportthis">
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>CPR</th>
+                        <th>ITEM</th>
+                        <th>ItemPrice</th>
+                        <th>TOTALSALE</th>
+                    </tr>
+                    <tr ng-repeat="data in cust">
+                        <td>{{data.customerName}}</td>
+                        <td>{{data.cpr}}</td>
+                        <td>{{data.item}}</td>
+                        <td>{{data.itemPrice}}</td>
+                        <td>{{data.totalsale}}</td>
+
+                    </tr>
+
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+   
+    <script type="text/javascript" src="../../Scripts/html2canvas.js"></script>
+  
+
+
+</div>
