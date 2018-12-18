@@ -1,0 +1,112 @@
+﻿@{
+    if (Session["LoggedInUser"] == null)
+    {
+        Response.Redirect(Url.Action("Login", "Login"));
+    }
+}<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+   
+
+  
+
+    <link rel="stylesheet" href="~/theme/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/theme/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*<script src="../theme/plugins/jquery/jquery.min.js"></script>*@
+    <!-- Bootstrap -->
+    <script src="~/theme/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/theme/dist/js/adminlte.js"></script>
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="~/theme/dist/js/demo.js"></script>
+    <!-- PAGE PLUGINS -->
+    <!-- SparkLine -->
+    <script src="~/theme/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- jVectorMap -->
+    <script src="~/theme/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/theme/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="~/theme/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- ChartJS 1.0.2 -->
+    <script src="~/theme/plugins/chartjs-old/Chart.min.js"></script>
+    <!-- PAGE SCRIPTS -->
+    <script src="~/theme/dist/js/pages/dashboard2.js"></script>
+   
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/App/admin/adminApp.js"></script>
+   
+       @* <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+        
+            <script src="~/Scripts/html2canvas.js"></script>
+             <script src="~/Scripts/html2canvas.min.js"></script>*@
+
+</head>
+<body ng-app="AdminApp"> 
+ 
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" ><i class="fa fa-bars"></i></a>
+                    </li>
+                    @*<li class="nav-item d-none d-sm-inline-block">
+                        <a href="index3.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>*@
+                </ul>
+                <!-- SEARCH FORM -->
+               
+                <!-- Right navbar links -->
+                
+            </nav>
+            <!-- /.navbar -->
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4" >
+                <!-- Brand Logo -->
+                <a href="index3.html" class="brand-link" style="background-color:#dc3545">
+                    <img src="~/theme/dist/img/AdminLTELogo.png" alt="Aldelo Reports" class="brand-image img-circle elevation-3"
+                         style="opacity: .8">
+                    <span class="brand-text font-weight-light">Aldelo-Reports</span>
+                </a>
+                <!-- Sidebar -->
+                <div class="sidebar" style="background-color:#fff">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="~/theme/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info" >
+                            <a href="#" class="d-block">Admin</a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper" ng-view="">
+                @RenderBody()
+
+                
+              
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - Aldelo Admin</p>
+                </footer>
+            </div>
+           
+</body>
+</html>

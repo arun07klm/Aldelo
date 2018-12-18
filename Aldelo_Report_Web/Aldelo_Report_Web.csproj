@@ -225,6 +225,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="customModel\customer.cs" />
     <Compile Include="Global.asax.cs">
@@ -238,6 +239,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AccessDB\TestDB.mdb" />
+    <Content Include="App\admin\adminApp.js" />
     <Content Include="App\app.js" />
     <Content Include="App\cust\custController.js" />
     <Content Include="App\cust\custHtml.html" />
@@ -1335,6 +1337,9 @@
     <Content Include="theme\plugins\popper\umd\popper.js.map" />
     <Content Include="theme\plugins\popper\umd\popper.min.js.map" />
     <Content Include="theme\README.md" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Home\AdminIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Default\" />

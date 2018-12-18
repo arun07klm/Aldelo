@@ -105,6 +105,7 @@
     <Compile Include="BOL\CompanyDto.cs" />
     <Compile Include="BOL\CompanyMenuListDto.cs" />
     <Compile Include="BOL\MenuDto.cs" />
+    <Compile Include="DAL\CompanyDal.cs" />
     <Compile Include="Entity\Account.cs">
       <DependentUpon>AldeloEntities.tt</DependentUpon>
     </Compile>

@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    if (Session["LoggedInUser"] == null)
+    {
+        Response.Redirect(Url.Action("Login", "Login"));
+    }
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />

@@ -12,7 +12,10 @@ namespace Aldelo_Report_Web.Controllers
         {
             return View();
         }
-
+        public ActionResult AdminIndex()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

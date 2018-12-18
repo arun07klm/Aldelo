@@ -16,6 +16,8 @@ namespace Aldelo.DatabaseInterface.BOL
         public string DBFolderPath { get; set; }
         public System.DateTime CreatedOn { get; set; }
         public byte Status { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
         public virtual AccountDto AccountDto { get; set; }
         public virtual AddressDto AddressDto { get; set; }
