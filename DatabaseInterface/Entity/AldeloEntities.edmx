@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AldeloModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="AldeloModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Account">
           <Key>
             <PropertyRef Name="AccountId" />
@@ -33,6 +33,7 @@
           <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="AddressId" Type="int" Nullable="false" />
           <Property Name="AccountId" Type="int" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="PasswordExpireOn" Type="date" />
           <Property Name="DBFolderPath" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="CreatedOn" Type="datetime" Nullable="false" />
@@ -129,11 +130,33 @@
             <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AldeloModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AldeloEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Account" EntityType="AldeloModel.Account" />
+          <EntitySet Name="Address" EntityType="AldeloModel.Address" />
+          <EntitySet Name="Company" EntityType="AldeloModel.Company" />
+          <EntitySet Name="CompanyMenuList" EntityType="AldeloModel.CompanyMenuList" />
+          <EntitySet Name="Menu" EntityType="AldeloModel.Menu" />
+          <AssociationSet Name="FK_Company_Account" Association="AldeloModel.FK_Company_Account">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="Company" EntitySet="Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Company_Address" Association="AldeloModel.FK_Company_Address">
+            <End Role="Address" EntitySet="Address" />
+            <End Role="Company" EntitySet="Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CompanyMenuList_Company" Association="AldeloModel.FK_CompanyMenuList_Company">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CompanyMenuList_Menu" Association="AldeloModel.FK_CompanyMenuList_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="Account">
           <Key>
             <PropertyRef Name="AccountId" />
@@ -142,7 +165,7 @@
           <Property Name="passwordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="passwordSalt" Type="Guid" />
           <Property Name="AuthCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Company" Relationship="Self.FK_Company_Account" FromRole="Account" ToRole="Company" />
+          <NavigationProperty Name="Company" Relationship="AldeloModel.FK_Company_Account" FromRole="Account" ToRole="Company" />
         </EntityType>
         <EntityType Name="Address">
           <Key>
@@ -154,23 +177,24 @@
           <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Company" Relationship="Self.FK_Company_Address" FromRole="Address" ToRole="Company" />
+          <NavigationProperty Name="Company" Relationship="AldeloModel.FK_Company_Address" FromRole="Address" ToRole="Company" />
         </EntityType>
         <EntityType Name="Company">
           <Key>
             <PropertyRef Name="CompanyId" />
           </Key>
           <Property Name="CompanyId" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="AddressId" Type="Int32" Nullable="false" />
           <Property Name="AccountId" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PasswordExpireOn" Type="DateTime" Precision="0" />
-          <Property Name="DBFolderPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DBFolderPath" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Status" Type="Byte" Nullable="false" />
-          <NavigationProperty Name="Account" Relationship="Self.FK_Company_Account" FromRole="Company" ToRole="Account" />
-          <NavigationProperty Name="Address" Relationship="Self.FK_Company_Address" FromRole="Company" ToRole="Address" />
-          <NavigationProperty Name="CompanyMenuList" Relationship="Self.FK_CompanyMenuList_Company" FromRole="Company" ToRole="CompanyMenuList" />
+          <NavigationProperty Name="Account" Relationship="AldeloModel.FK_Company_Account" FromRole="Company" ToRole="Account" />
+          <NavigationProperty Name="Address" Relationship="AldeloModel.FK_Company_Address" FromRole="Company" ToRole="Address" />
+          <NavigationProperty Name="CompanyMenuList" Relationship="AldeloModel.FK_CompanyMenuList_Company" FromRole="Company" ToRole="CompanyMenuList" />
         </EntityType>
         <EntityType Name="CompanyMenuList">
           <Key>
@@ -180,24 +204,24 @@
           <Property Name="CompanyId" Type="Int32" Nullable="false" />
           <Property Name="MenuId" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="Byte" Nullable="false" />
-          <NavigationProperty Name="Company" Relationship="Self.FK_CompanyMenuList_Company" FromRole="CompanyMenuList" ToRole="Company" />
-          <NavigationProperty Name="Menu" Relationship="Self.FK_CompanyMenuList_Menu" FromRole="CompanyMenuList" ToRole="Menu" />
+          <NavigationProperty Name="Company" Relationship="AldeloModel.FK_CompanyMenuList_Company" FromRole="CompanyMenuList" ToRole="Company" />
+          <NavigationProperty Name="Menu" Relationship="AldeloModel.FK_CompanyMenuList_Menu" FromRole="CompanyMenuList" ToRole="Menu" />
         </EntityType>
         <EntityType Name="Menu">
           <Key>
             <PropertyRef Name="MenuId" />
           </Key>
           <Property Name="MenuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Path" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Logo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Style" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Byte" Nullable="false" />
-          <NavigationProperty Name="CompanyMenuList" Relationship="Self.FK_CompanyMenuList_Menu" FromRole="Menu" ToRole="CompanyMenuList" />
+          <NavigationProperty Name="CompanyMenuList" Relationship="AldeloModel.FK_CompanyMenuList_Menu" FromRole="Menu" ToRole="CompanyMenuList" />
         </EntityType>
         <Association Name="FK_Company_Account">
-          <End Role="Account" Type="Self.Account" Multiplicity="1" />
-          <End Role="Company" Type="Self.Company" Multiplicity="*" />
+          <End Type="AldeloModel.Account" Role="Account" Multiplicity="1" />
+          <End Type="AldeloModel.Company" Role="Company" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Account">
               <PropertyRef Name="AccountId" />
@@ -208,8 +232,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Company_Address">
-          <End Role="Address" Type="Self.Address" Multiplicity="1" />
-          <End Role="Company" Type="Self.Company" Multiplicity="*" />
+          <End Type="AldeloModel.Address" Role="Address" Multiplicity="1" />
+          <End Type="AldeloModel.Company" Role="Company" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Address">
               <PropertyRef Name="AddressId" />
@@ -220,8 +244,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CompanyMenuList_Company">
-          <End Role="Company" Type="Self.Company" Multiplicity="1" />
-          <End Role="CompanyMenuList" Type="Self.CompanyMenuList" Multiplicity="*" />
+          <End Type="AldeloModel.Company" Role="Company" Multiplicity="1" />
+          <End Type="AldeloModel.CompanyMenuList" Role="CompanyMenuList" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Company">
               <PropertyRef Name="CompanyId" />
@@ -232,8 +256,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CompanyMenuList_Menu">
-          <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
-          <End Role="CompanyMenuList" Type="Self.CompanyMenuList" Multiplicity="*" />
+          <End Type="AldeloModel.Menu" Role="Menu" Multiplicity="1" />
+          <End Type="AldeloModel.CompanyMenuList" Role="CompanyMenuList" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Menu">
               <PropertyRef Name="MenuId" />
@@ -243,29 +267,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="AldeloEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Account" EntityType="Self.Account" />
-          <EntitySet Name="Address" EntityType="Self.Address" />
-          <EntitySet Name="Company" EntityType="Self.Company" />
-          <EntitySet Name="CompanyMenuList" EntityType="Self.CompanyMenuList" />
-          <EntitySet Name="Menu" EntityType="Self.Menu" />
-          <AssociationSet Name="FK_Company_Account" Association="Self.FK_Company_Account">
-            <End Role="Account" EntitySet="Account" />
-            <End Role="Company" EntitySet="Company" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Company_Address" Association="Self.FK_Company_Address">
-            <End Role="Address" EntitySet="Address" />
-            <End Role="Company" EntitySet="Company" />
-          </AssociationSet>
-          <AssociationSet Name="FK_CompanyMenuList_Company" Association="Self.FK_CompanyMenuList_Company">
-            <End Role="Company" EntitySet="Company" />
-            <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
-          </AssociationSet>
-          <AssociationSet Name="FK_CompanyMenuList_Menu" Association="Self.FK_CompanyMenuList_Menu">
-            <End Role="Menu" EntitySet="Menu" />
-            <End Role="CompanyMenuList" EntitySet="CompanyMenuList" />
-          </AssociationSet>
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -275,58 +276,59 @@
           <EntitySetMapping Name="Account">
             <EntityTypeMapping TypeName="AldeloModel.Account">
               <MappingFragment StoreEntitySet="Account">
-                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
-                <ScalarProperty Name="passwordHash" ColumnName="passwordHash" />
-                <ScalarProperty Name="passwordSalt" ColumnName="passwordSalt" />
                 <ScalarProperty Name="AuthCode" ColumnName="AuthCode" />
+                <ScalarProperty Name="passwordSalt" ColumnName="passwordSalt" />
+                <ScalarProperty Name="passwordHash" ColumnName="passwordHash" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Address">
             <EntityTypeMapping TypeName="AldeloModel.Address">
               <MappingFragment StoreEntitySet="Address">
-                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
-                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
-                <ScalarProperty Name="Location" ColumnName="Location" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="State" ColumnName="State" />
                 <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Company">
             <EntityTypeMapping TypeName="AldeloModel.Company">
               <MappingFragment StoreEntitySet="Company">
-                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
-                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
-                <ScalarProperty Name="PasswordExpireOn" ColumnName="PasswordExpireOn" />
-                <ScalarProperty Name="DBFolderPath" ColumnName="DBFolderPath" />
-                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="DBFolderPath" ColumnName="DBFolderPath" />
+                <ScalarProperty Name="PasswordExpireOn" ColumnName="PasswordExpireOn" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CompanyMenuList">
             <EntityTypeMapping TypeName="AldeloModel.CompanyMenuList">
               <MappingFragment StoreEntitySet="CompanyMenuList">
-                <ScalarProperty Name="CompanyMenuListId" ColumnName="CompanyMenuListId" />
-                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
-                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="CompanyMenuListId" ColumnName="CompanyMenuListId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Menu">
             <EntityTypeMapping TypeName="AldeloModel.Menu">
               <MappingFragment StoreEntitySet="Menu">
-                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Path" ColumnName="Path" />
-                <ScalarProperty Name="Logo" ColumnName="Logo" />
-                <ScalarProperty Name="Style" ColumnName="Style" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Style" ColumnName="Style" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

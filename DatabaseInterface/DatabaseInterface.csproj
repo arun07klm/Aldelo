@@ -142,6 +142,7 @@
     <Compile Include="RepositoryBase\PropertyComparer.cs" />
     <Compile Include="RepositoryBase\RepositoryBase.cs" />
     <Compile Include="Utility\EncryptionMD5.cs" />
+    <Compile Include="Utility\AldeloEnums.cs" />
     <Compile Include="Utility\LoginInfoCreate.cs" />
     <Compile Include="Utility\PasswordHashHelper.cs" />
   </ItemGroup>

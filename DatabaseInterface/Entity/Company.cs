@@ -24,6 +24,7 @@ namespace Aldelo.DatabaseInterface.Entity
         public string Name { get; set; }
         public int AddressId { get; set; }
         public int AccountId { get; set; }
+        public string Username { get; set; }
         public Nullable<System.DateTime> PasswordExpireOn { get; set; }
         public string DBFolderPath { get; set; }
         public System.DateTime CreatedOn { get; set; }

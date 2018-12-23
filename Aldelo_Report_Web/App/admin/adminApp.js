@@ -4,8 +4,12 @@ app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
     .when('/', {
         redirectTo: function () {
-            return '/home';
+            return '/company';
         }
+    }).when('/company', {
+        templateUrl: '/App/admin/company/companyIndex.html',
+        controller: 'companyIndexController'
+
     })
     //function
     //$locationProvider.html5Mode(false).hashPrefix('!');

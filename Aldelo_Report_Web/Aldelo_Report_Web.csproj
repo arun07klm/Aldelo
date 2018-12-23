@@ -223,6 +223,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -240,6 +241,9 @@
   <ItemGroup>
     <Content Include="AccessDB\TestDB.mdb" />
     <Content Include="App\admin\adminApp.js" />
+    <Content Include="App\admin\company\companyIndexController.js" />
+    <Content Include="App\admin\company\companyIndex.html" />
+    <Content Include="App\admin\company\companyService.js" />
     <Content Include="App\app.js" />
     <Content Include="App\cust\custController.js" />
     <Content Include="App\cust\custHtml.html" />
@@ -1342,6 +1346,7 @@
     <Content Include="Views\Home\AdminIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Company\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
