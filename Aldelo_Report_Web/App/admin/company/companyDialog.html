@@ -1,0 +1,89 @@
+﻿<section class="content">
+    <div class="container-fluid">
+        <div class="card card-info">
+            <div class="card-header">
+                <h3 class="card-title">Add Company</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form role="form" novalidate name="companyForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-body">
+
+                            <div class="form-group">
+                                <label for="companyName">Name</label>
+                                <input type="text" class="form-control" ng-required="true" ng-model="vm.company.name" name="companyName" id="companyName" placeholder="Enter company name">
+                                <div ng-messages="companyForm.companyName.$error" role="alert" ng-show="!companyForm.companyName.$untouched">
+                                    <div ng-message="required" class="text-danger">Name is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" ng-model="vm.company.addressDto.addressLine1" id="address" placeholder="Enter company address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" class="form-control" ng-model="vm.company.addressDto.location" id="location" placeholder="Enter company location">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" ng-model="vm.company.addressDto.city" id="city" placeholder="Enter company city">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">State</label>
+                                <input type="text" class="form-control" ng-model="vm.company.addressDto.state" id="state" placeholder="Enter company state">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="valid">Valid UpTo</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                    <input type="date" name="valid" ng-required="true" ng-model="vm.company.passwordExpireOn" class="form-control">
+                                </div>
+                                <div ng-messages="companyForm.valid.$error" role="alert" ng-show="!companyForm.valid.$untouched">
+                                    <div ng-message="required" class="text-danger">Valid upto is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" ng-required="true" ng-model="vm.company.username" id="username" name="username" placeholder="Username">
+                                <div ng-messages="companyForm.username.$error" role="alert" ng-show="!companyForm.username.$untouched">
+                                    <div ng-message="required" class="text-danger">Username is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" ng-model="vm.company.password" ng-required="true" name="password" placeholder="Password">
+                                <div ng-messages="companyForm.password.$error" role="alert" ng-show="!companyForm.password.$untouched">
+                                    <div ng-message="required" class="text-danger">Password is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" name="confirmPassword" ng-required="true" ng-model="vm.company.confirmPassword" pwcheck="{{vm.company.password}}" placeholder="Confirm Password">
+                                <div ng-messages="companyForm.confirmPassword.$error" role="alert" ng-show="!companyForm.confirmPassword.$untouched">
+                                    <div ng-message="required" class="text-danger">Confirm Password is required</div>
+                                    <div ng-message="pwcheck" class="text-danger">Passwords don't match!</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

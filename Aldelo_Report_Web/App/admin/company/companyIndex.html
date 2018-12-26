@@ -1,46 +1,50 @@
-﻿<div>
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-5"><input type="button" ng-click="addNewCompany()" />Add</div>
+﻿<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Company List</h3>
+                    <div class="col-5"><input type="button" ng-click="vm.addNewCompany()" />Add</div>
+
+                </div>
+
+                <div class="card-body table-responsive p-0" ng-init="getAllCompany()">
+                    <table class="table table-hover">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Expire On</th>
+                            <th>Location</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr ng-repeat="item in companyList">
+                            <td>{{$index+1}}</td>
+                            <td>{{item.name}}</td>
+                            <td>{{item.username}}</td>
+                            <td>{{item.passwordExpireOn}}</td>
+                            <td>{{item.addressDto.location}}</td>
+                            <td>{{item.addressDto.city}}</td>
+                            <td>{{item.addressDto.state}}</td>
+                            <td>{{item.addressDto.country}}</td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+
             </div>
-
-            <div class="card-body table-responsive p-0" ng-init="getAllCompany()">
-                <table class="table table-hover" id="exportthis">
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Username</th>
-                        <th>Expire On</th>
-                        <th>Location</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Country</th>
-                        <th>Option</th>
-                    </tr>
-                    <tr ng-repeat="item in companyList">
-                        <td>{{$index+1}}</td>
-                        <td>{{item.name}}</td>
-                        <td>{{item.username}}</td>
-                        <td>{{item.passwordExpireOn}}</td>
-                        <td>{{item.addressDto.location}}</td>
-                        <td>{{item.addressDto.city}}</td>
-                        <td>{{item.addressDto.state}}</td>
-                        <td>{{item.addressDto.country}}</td>
-                        <td></td>
-                    </tr>
-
-                </table>
-            </div>
-
-
         </div>
     </div>
+</section>
 
 
 
-    <script type="text/javascript" src="../../Scripts/html2canvas.js"></script>
+<script type="text/javascript" src="../../Scripts/html2canvas.js"></script>
 
 
 
-</div>

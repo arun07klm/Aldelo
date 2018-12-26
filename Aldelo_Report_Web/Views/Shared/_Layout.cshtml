@@ -3,6 +3,10 @@
     {
         Response.Redirect(Url.Action("Login", "Login"));
     }
+    if(Session["LoggedInUser"] != null&& Session["LoggedInUser"].ToString() == "Admin")
+    {
+        Response.Redirect(Url.Action("AdminIndex", "Home"));
+    }
 }
 <!DOCTYPE html>
 <html>
