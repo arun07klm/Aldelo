@@ -15,7 +15,7 @@ namespace DatabaseInterface
         {
             var companyDtoList = new List<CompanyDto>();
             var companyList = Find(x => x.Status == (byte)AldeloEnums.RecordStatus.ACTIVE);
-            foreach(var company in companyList)
+            foreach (var company in companyList)
             {
                 var companyDto = new CompanyDto { AddressDto = new AddressDto() };
                 CopyTocompanyDto(companyDto, company);
@@ -23,6 +23,25 @@ namespace DatabaseInterface
             }
             return companyDtoList;
         }
+        public bool SaveCompanyDal(CompanyDto companyDto)
+        {
+            try
+            {
+                var company = new Company { Account = new Account() ,Address=new Address()};
+                CreateLoginInfo(companyDto);
+                CopyFromCompanyDto(company, companyDto);
+                Add(company);
+                Save();
+            }
+            catch(Exception ee)
+            {
+                return false;
+
+            }
+
+            return true;
+        }
+
         public CompanyDto IsValidCompany(string username, string password)
         {
             var company = new Company();
@@ -76,6 +95,35 @@ namespace DatabaseInterface
             }
 
         }
+        private void CopyFromCompanyDto(Company destination, CompanyDto source)
+        {
+            destination.AddressId = source.AddressId;
+            destination.CompanyId = source.CompanyId;
+            destination.CreatedOn = source.CreatedOn;
+            destination.DBFolderPath = source.DBFolderPath;
+            destination.Name = source.Name;
+            destination.PasswordExpireOn = source.PasswordExpireOn;
+            destination.Username = source.Username;
+            destination.Status = source.Status;
+            destination.Account.passwordHash = source.AccountDto.PasswordHash;
+            destination.Account.passwordSalt = source.AccountDto.PasswordSalt;
+            if (destination.Address != null && source.AddressDto != null)
+            {
+                destination.Address.AddressLine1 = source.AddressDto.AddressLine1;
+                destination.Address.City = source.AddressDto.City;
+                destination.Address.Country = source.AddressDto.Country;
+                destination.Address.Location = source.AddressDto.Location;
+                destination.Address.State = source.AddressDto.Location;
+            }
 
+        }
+        public CompanyDto CreateLoginInfo(CompanyDto compnayDto)
+        {
+            LoginInfoCreate loginInfo = PasswordHashHelper.CreatePasswordHash(compnayDto.Password);
+            compnayDto.AccountDto = new AccountDto();
+            compnayDto.AccountDto.PasswordSalt = loginInfo.Salt;
+            compnayDto.AccountDto.PasswordHash = loginInfo.PasswordHash;
+            return compnayDto;
+        }
     }
 }
