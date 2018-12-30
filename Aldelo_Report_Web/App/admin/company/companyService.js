@@ -6,12 +6,20 @@
     var saveCompany = function (company) {
         return $http.post("/Company/SaveCompany",company);
     }
+    var updateCompany = function (company) {
+        return $http.post("/Company/EditCompany", company);
+    }
     var getAllMenu = function () {
         return $http.get("/Company/GetAllMenu");
+    }
+    var getCompanyById = function (id) {
+        return $http.get("/Company/GetCompanyById/"+id);
     }
     return {
         getAllCompany: getAllCompany,
         saveCompany: saveCompany,
-        getAllMenu: getAllMenu
+        getAllMenu: getAllMenu,
+        getCompanyById:getCompanyById,
+        updateCompany:updateCompany
     }
 }]);

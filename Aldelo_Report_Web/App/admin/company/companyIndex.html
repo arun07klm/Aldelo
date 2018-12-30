@@ -4,7 +4,7 @@
             <div class="card card-info">
                 <div class="card-header">
                     <h3 class="card-title">Company List</h3>
-                    <div class="pull-right"`><button class="btn btn-success" ng-click="vm.addNewCompany()">Add</button></div>
+                    <div class="pull-right" `><button class="btn btn-success" ng-click="vm.addNewCompany()">Add</button></div>
 
                 </div>
 
@@ -15,6 +15,7 @@
                             <th>Name</th>
                             <th>Username</th>
                             <th>Expire On</th>
+                            <th>Address</th>
                             <th>Location</th>
                             <th>City</th>
                             <th>State</th>
@@ -26,11 +27,23 @@
                             <td>{{item.name}}</td>
                             <td>{{item.username}}</td>
                             <td>{{item.passwordExpireOn}}</td>
+                            <td>{{item.addressDto.addressLine1}}</td>
                             <td>{{item.addressDto.location}}</td>
                             <td>{{item.addressDto.city}}</td>
                             <td>{{item.addressDto.state}}</td>
                             <td>{{item.addressDto.country}}</td>
-                            <td></td>
+                            <td>
+                                <div class="btn-group">
+
+                                    <a href="#/company/{{item.companyId}}" class="btn btn-sm" >
+                                        <i class="fa fa-edit"></i> 
+                                    </a>
+                                    <a href="" class="btn btn-sm">
+                                        <i class="fa fa-remove"></i> 
+                                    </a>
+                                </div>
+
+                            </td>
                         </tr>
 
                     </table>

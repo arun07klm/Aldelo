@@ -31,12 +31,17 @@ namespace Aldelo_Report_Web.Controllers
             var companyDtoList = companyDal.GetAllCompanyDal();
             return GetJson(companyDtoList);
         }
+        //GET: Company By Id
+        public ActionResult GetCompanyById(int id)
+        {
+            return GetJson(companyDal.GetCompanyByIdDal(id));
+        }
         //POST: Company
         public ActionResult SaveCompany(CompanyDto companyDto)
         {
             companyDto.CreatedOn = DateTime.Now;
             companyDto.Status = (byte)AldeloEnums.RecordStatus.ACTIVE;
-            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/" + companyDto.Username);
+            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/AccessDB/" + companyDto.Username);
             bool exists = System.IO.Directory.Exists(sPath);
             if (!exists)
                 System.IO.Directory.CreateDirectory(sPath);
@@ -48,16 +53,17 @@ namespace Aldelo_Report_Web.Controllers
         public ActionResult EditCompany(CompanyDto companyDto)
         {
             companyDto.Status = (byte)AldeloEnums.RecordStatus.ACTIVE;
-            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/" + companyDto.Username);
+            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/AccessDB/" + companyDto.Username);
             bool exists = System.IO.Directory.Exists(sPath);
             if (!exists)
                 System.IO.Directory.CreateDirectory(sPath);
             companyDto.DBFolderPath = companyDto.Username;
+            bool isCompanySavedSuccessfully = false;
             if (companyMenuListDal.RemoveAllCompanyMenu(companyDto.CompanyId))
             {
-                menuDal.SaveMenuListDal(companyDto.MenuListDto);
+                isCompanySavedSuccessfully = companyDal.EditCompanyDal(companyDto);
             }
-            var isCompanySavedSuccessfully = companyDal.EditCompanyDal(companyDto);
+           
             return GetJson(isCompanySavedSuccessfully);
         }
         public ActionResult GetAllMenu()

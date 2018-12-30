@@ -14,6 +14,10 @@ app.config(function ($routeProvider, $locationProvider) {
         templateUrl: '/App/admin/company/companyDialog.html',
         controller: 'companyController',
         controllerAs: "vm"
+    }).when('/company/:id', {
+        templateUrl: '/App/admin/company/companyDialog.html',
+        controller: 'companyController',
+        controllerAs: "vm"
     })
     //function
     //$locationProvider.html5Mode(false).hashPrefix('!');

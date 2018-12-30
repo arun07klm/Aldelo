@@ -49,19 +49,19 @@
                             </div>
                             <div class="form-group">
                                 <label for="username">Username</label>
-                                <input type="text" class="form-control" ng-required="true" ng-model="vm.company.username" id="username" name="username" placeholder="Username">
+                                <input type="text" class="form-control" ng-disabled="vm.isEdit" ng-required="true" ng-model="vm.company.username" id="username" name="username" placeholder="Username">
                                 <div ng-messages="companyForm.username.$error" role="alert" ng-show="!companyForm.username.$untouched">
                                     <div ng-message="required" class="text-danger">Username is required</div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="!vm.isEdit">
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" ng-model="vm.company.password" ng-required="true" name="password" placeholder="Password">
                                 <div ng-messages="companyForm.password.$error" role="alert" ng-show="!companyForm.password.$untouched">
                                     <div ng-message="required" class="text-danger">Password is required</div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="!vm.isEdit">
                                 <label for="confirmPassword">Confirm Password</label>
                                 <input type="password" class="form-control" name="confirmPassword" ng-required="true" ng-model="vm.company.confirmPassword" pwcheck="{{vm.company.password}}" placeholder="Confirm Password">
                                 <div ng-messages="companyForm.confirmPassword.$error" role="alert" ng-show="!companyForm.confirmPassword.$untouched">
@@ -80,7 +80,7 @@
                                     <div class="card-header">
                                         <h3 class="card-title">Select Menu</h3>
                                     </div>
-                                    <div class="card-body" ng-init="vm.getAllMenu()">
+                                    <div class="card-body" >
                                         <div class="form-group" ng-repeat="item in vm.company.menuListDto">
                                             <label>
                                                 <input type="checkbox" class="minimal" ng-model="item.isChecked">
@@ -98,7 +98,8 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary" ng-click="vm.saveCompany()">Submit</button>
+                    <button type="submit" ng-if="!vm.isEdit" class="btn btn-primary" ng-click="vm.saveCompany()">Submit</button>
+                    <button type="submit" ng-if="vm.isEdit" class="btn btn-primary" ng-click="vm.updateCompany()">Update</button>
                     <button type="button" class="btn btn-danger" ng-click="vm.cancel()">Cancel</button>
                 </div>
             </form>
