@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="86e0febf9ab34e1cadcc08e3fe0277fa" Name="Diagram1">
-        <EntityTypeShape EntityType="AldeloModel.Account" Width="1.5" PointX="0.75" PointY="5.625" />
-        <EntityTypeShape EntityType="AldeloModel.Address" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="AldeloModel.Account" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="AldeloModel.Address" Width="1.5" PointX="0.75" PointY="5.5" />
         <EntityTypeShape EntityType="AldeloModel.Company" Width="1.5" PointX="3" PointY="1" />
         <EntityTypeShape EntityType="AldeloModel.CompanyMenuList" Width="1.5" PointX="5.25" PointY="1.625" />
         <EntityTypeShape EntityType="AldeloModel.Menu" Width="1.5" PointX="3" PointY="5.5" />

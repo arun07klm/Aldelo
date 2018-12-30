@@ -6,8 +6,12 @@
     var saveCompany = function (company) {
         return $http.post("/Company/SaveCompany",company);
     }
+    var getAllMenu = function () {
+        return $http.get("/Company/GetAllMenu");
+    }
     return {
         getAllCompany: getAllCompany,
-        saveCompany: saveCompany
+        saveCompany: saveCompany,
+        getAllMenu: getAllMenu
     }
 }]);

@@ -35,10 +35,6 @@
                                 <label for="city">State</label>
                                 <input type="text" class="form-control" ng-model="vm.company.addressDto.state" id="state" placeholder="Enter company state">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body">
                             <div class="form-group">
                                 <label for="valid">Valid UpTo</label>
                                 <div class="input-group">
@@ -73,7 +69,28 @@
                                     <div ng-message="pwcheck" class="text-danger">Passwords don't match!</div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            
+                           
+                            <div class="form-group">
+                                <div class="card card-success">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Select Menu</h3>
+                                    </div>
+                                    <div class="card-body" ng-init="vm.getAllMenu()">
+                                        <div class="form-group" ng-repeat="item in vm.company.menuListDto">
+                                            <label>
+                                                <input type="checkbox" class="minimal" ng-model="item.isChecked">
+                                                {{item.name}}
+                                            </label>
+                                        </div>
 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

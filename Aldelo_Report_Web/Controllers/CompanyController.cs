@@ -1,4 +1,5 @@
 ﻿using Aldelo.DatabaseInterface.BOL;
+using Aldelo.DatabaseInterface.DAL;
 using DatabaseInterface;
 using DatabaseInterface.Utility;
 using Newtonsoft.Json;
@@ -16,9 +17,13 @@ namespace Aldelo_Report_Web.Controllers
     public class CompanyController : Controller
     {
         CompanyDal companyDal;
+        MenuDal menuDal;
+        CompanyMenuListDal companyMenuListDal;
         public CompanyController()
         {
             companyDal = new CompanyDal();
+            menuDal = new MenuDal();
+            companyMenuListDal = new CompanyMenuListDal();
         }
         // GET: Company
         public ActionResult GetAllCompany()
@@ -31,13 +36,33 @@ namespace Aldelo_Report_Web.Controllers
         {
             companyDto.CreatedOn = DateTime.Now;
             companyDto.Status = (byte)AldeloEnums.RecordStatus.ACTIVE;
-            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/"+companyDto.Username);
+            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/" + companyDto.Username);
             bool exists = System.IO.Directory.Exists(sPath);
             if (!exists)
                 System.IO.Directory.CreateDirectory(sPath);
             companyDto.DBFolderPath = companyDto.Username;
             var isCompanySavedSuccessfully = companyDal.SaveCompanyDal(companyDto);
             return GetJson(isCompanySavedSuccessfully);
+        }
+        //POST: Company
+        public ActionResult EditCompany(CompanyDto companyDto)
+        {
+            companyDto.Status = (byte)AldeloEnums.RecordStatus.ACTIVE;
+            var sPath = System.Web.Hosting.HostingEnvironment.MapPath("~/" + companyDto.Username);
+            bool exists = System.IO.Directory.Exists(sPath);
+            if (!exists)
+                System.IO.Directory.CreateDirectory(sPath);
+            companyDto.DBFolderPath = companyDto.Username;
+            if (companyMenuListDal.RemoveAllCompanyMenu(companyDto.CompanyId))
+            {
+                menuDal.SaveMenuListDal(companyDto.MenuListDto);
+            }
+            var isCompanySavedSuccessfully = companyDal.EditCompanyDal(companyDto);
+            return GetJson(isCompanySavedSuccessfully);
+        }
+        public ActionResult GetAllMenu()
+        {
+            return GetJson(menuDal.GetAllMenuDal());
         }
         public static ContentResult GetJson(dynamic obj)
         {

@@ -27,13 +27,30 @@ namespace DatabaseInterface
         {
             try
             {
-                var company = new Company { Account = new Account() ,Address=new Address()};
+                var company = new Company { Account = new Account(), Address = new Address(),CompanyMenuList=new List<CompanyMenuList>() };
                 CreateLoginInfo(companyDto);
                 CopyFromCompanyDto(company, companyDto);
                 Add(company);
                 Save();
             }
-            catch(Exception ee)
+            catch (Exception ee)
+            {
+                return false;
+
+            }
+
+            return true;
+        }
+        public bool EditCompanyDal(CompanyDto companyDto)
+        {
+            try
+            {
+                var company = FirstOrDefault(x => x.CompanyId == companyDto.CompanyId);
+
+                CopyFromCompanyDto(company, companyDto);
+                Update(company, company.CompanyId);
+            }
+            catch (Exception ee)
             {
                 return false;
 
@@ -66,7 +83,7 @@ namespace DatabaseInterface
                     {
                         companyDto = null;
                     }
-                }
+                }else { companyDto = null; }
             }
             catch (Exception e)
             {
@@ -93,6 +110,16 @@ namespace DatabaseInterface
                 destination.AddressDto.Location = source.Address.Location;
                 destination.AddressDto.State = source.Address.Location;
             }
+            if (destination.MenuListDto != null && source.CompanyMenuList != null)
+            {
+                foreach (var menuDto in source.CompanyMenuList)
+                {
+                    var menu = new MenuDto();
+                    menu.MenuId = menuDto.MenuId;
+                    destination.MenuListDto.Add(menu);
+                }
+            }
+
 
         }
         private void CopyFromCompanyDto(Company destination, CompanyDto source)
@@ -105,8 +132,11 @@ namespace DatabaseInterface
             destination.PasswordExpireOn = source.PasswordExpireOn;
             destination.Username = source.Username;
             destination.Status = source.Status;
-            destination.Account.passwordHash = source.AccountDto.PasswordHash;
-            destination.Account.passwordSalt = source.AccountDto.PasswordSalt;
+            if (destination.Account != null && source.AccountDto != null)
+            {
+                destination.Account.passwordHash = source.AccountDto.PasswordHash;
+                destination.Account.passwordSalt = source.AccountDto.PasswordSalt;
+            }
             if (destination.Address != null && source.AddressDto != null)
             {
                 destination.Address.AddressLine1 = source.AddressDto.AddressLine1;
@@ -114,6 +144,18 @@ namespace DatabaseInterface
                 destination.Address.Country = source.AddressDto.Country;
                 destination.Address.Location = source.AddressDto.Location;
                 destination.Address.State = source.AddressDto.Location;
+            }
+            if (destination.CompanyMenuList != null && source.MenuListDto != null)
+            {
+                foreach (var menuDto in source.MenuListDto)
+                {
+                    if (menuDto.IsChecked)
+                    {
+                        var menu = new CompanyMenuList();
+                        menu.MenuId = menuDto.MenuId;
+                        destination.CompanyMenuList.Add(menu);
+                    }
+                }
             }
 
         }

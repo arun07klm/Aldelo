@@ -43,6 +43,10 @@ namespace Aldelo_Report_Web.Controllers
             TempData["ErrorMessage"] = "Please check your login credentials.";
             return View();
         }
-
+        public ActionResult Logout()
+        {
+            Session["LoggedInUser"] = null;
+            return RedirectToAction("Login", "Login");
+        }
     }
 }

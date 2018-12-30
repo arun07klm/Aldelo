@@ -14,5 +14,6 @@ namespace Aldelo.DatabaseInterface.BOL
         public string Logo { get; set; }
         public string Style { get; set; }
         public byte Status { get; set; }
+        public bool IsChecked { get; set; }
     }
 }

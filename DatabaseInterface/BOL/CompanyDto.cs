@@ -21,6 +21,7 @@ namespace Aldelo.DatabaseInterface.BOL
 
         public virtual AccountDto AccountDto { get; set; }
         public virtual AddressDto AddressDto { get; set; }
-       
+        public virtual List<MenuDto> MenuListDto { get; set; }
+
     }
 }
