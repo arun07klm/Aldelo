@@ -16,6 +16,10 @@ namespace Aldelo_Report_Web.Controllers
         {
             return View();
         }
+        public ActionResult ValidityExpired()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

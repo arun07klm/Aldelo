@@ -15,11 +15,15 @@
     var getCompanyById = function (id) {
         return $http.get("/Company/GetCompanyById/"+id);
     }
+    var updatePasswordService = function (company) {
+        return $http.post("/Company/UpdatePassword", company);
+    }
     return {
         getAllCompany: getAllCompany,
         saveCompany: saveCompany,
         getAllMenu: getAllMenu,
         getCompanyById:getCompanyById,
-        updateCompany:updateCompany
+        updateCompany:updateCompany,
+        updatePasswordService:updatePasswordService
     }
 }]);

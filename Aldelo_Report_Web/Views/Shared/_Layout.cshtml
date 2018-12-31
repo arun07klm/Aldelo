@@ -1,4 +1,6 @@
-﻿@{ 
+﻿@using Aldelo.DatabaseInterface.BOL
+@{ 
+    CompanyDto company=new CompanyDto();
     if (Session["LoggedInUser"] == null)
     {
         Response.Redirect(Url.Action("Login", "Login"));
@@ -6,6 +8,10 @@
     if(Session["LoggedInUser"] != null&& Session["LoggedInUser"].ToString() == "Admin")
     {
         Response.Redirect(Url.Action("AdminIndex", "Home"));
+    }
+    if (Session["LoggedInUser"] != null && Session["LoggedInUser"].ToString() != "Admin")
+    {
+        company = Session["LoggedInCompany"] as CompanyDto;
     }
 }
 <!DOCTYPE html>
@@ -243,11 +249,20 @@
                         </div>
                     </div>
                     <!-- Sidebar Menu -->
-                    <nav class="mt-2">
+                    <nav class="mt-2" >
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" >
                             <!-- Add icons to the links using the .nav-icon class
                                  with font-awesome or any other icon font library -->
-                            <li class="nav-item">
+                            @foreach (var item in company.MenuListDto)
+                            {
+                                <li class="nav-item">
+                                    <a href="#@item.Path" class="nav-link">
+                                        <i class="@item.Style"></i>
+                                        <p>@item.Name</p>
+                                    </a>
+                                </li>
+                            }
+                            @*<li class="nav-item">
                                 <a href="#"  class="nav-link">
                                     <i class="nav-icon fa fa-circle-o text-info"></i>
                                     <p>Customer Wise</p>
@@ -306,7 +321,7 @@
                                     <i class="nav-icon fa fa-address-card-o text-info"></i>
                                     <p>Complementary Order</p>
                                 </a>
-                            </li>
+                            </li>*@
                         </ul>
                     </nav>
                     <!-- /.sidebar-menu -->

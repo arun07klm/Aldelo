@@ -247,6 +247,8 @@
     <Content Include="App\admin\company\companyIndexController.js" />
     <Content Include="App\admin\company\companyIndex.html" />
     <Content Include="App\admin\company\companyService.js" />
+    <Content Include="App\admin\company\passwordUpdate.html" />
+    <Content Include="App\admin\company\passwordUpdateController.js" />
     <Content Include="App\app.js" />
     <Content Include="App\cust\custController.js" />
     <Content Include="App\cust\custHtml.html" />
@@ -1353,6 +1355,7 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Home\AdminIndex.cshtml" />
+    <Content Include="Views\Home\ValidityExpired.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Company\" />

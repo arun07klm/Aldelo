@@ -41,7 +41,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                     </div>
-                                    <input type="date" name="valid" ng-required="true" ng-model="vm.company.passwordExpireOn" class="form-control">
+                                    <input type="date" name="valid" ng-required="true" ng-model="vm.company.passwordExpireOn" min="{{vm.mindate}}" class="form-control">
                                 </div>
                                 <div ng-messages="companyForm.valid.$error" role="alert" ng-show="!companyForm.valid.$untouched">
                                     <div ng-message="required" class="text-danger">Valid upto is required</div>

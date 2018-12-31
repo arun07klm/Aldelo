@@ -27,7 +27,7 @@ namespace DatabaseInterface
         {
             try
             {
-                var company = new Company { Account = new Account(), Address = new Address(),CompanyMenuList=new List<CompanyMenuList>() };
+                var company = new Company { Account = new Account(), Address = new Address(), CompanyMenuList = new List<CompanyMenuList>() };
                 CreateLoginInfo(companyDto);
                 CopyFromCompanyDto(company, companyDto);
                 Add(company);
@@ -58,11 +58,36 @@ namespace DatabaseInterface
 
             return true;
         }
-
+        public CompanyDto GetCompanyByIdDal(int id)
+        {
+            var companyDto = new CompanyDto { AddressDto = new AddressDto(), MenuListDto = new List<MenuDto>() };
+            var company = FirstOrDefault(x => x.CompanyId == id);
+            if (company != null) CopyTocompanyDto(companyDto, company);
+            else companyDto = null;
+            return companyDto;
+        }
+        public bool UpdatePasswordDal(int companyId, string password)
+        {
+            bool bRet = false;
+            try
+            {
+                var company = FirstOrDefault(x => x.CompanyId == companyId);
+                LoginInfoCreate loginInfo = PasswordHashHelper.CreatePasswordHash(password);
+                company.Account.passwordHash = loginInfo.PasswordHash;
+                company.Account.passwordSalt = loginInfo.Salt;
+                Update(company, companyId);
+                bRet = true;
+            }
+            catch (Exception ee)
+            {
+                bRet = false;
+            }
+            return bRet;
+        }
         public CompanyDto IsValidCompany(string username, string password)
         {
             var company = new Company();
-            var companyDto = new CompanyDto { AddressDto = new AddressDto() };
+            var companyDto = new CompanyDto { AddressDto = new AddressDto(),MenuListDto=new List<MenuDto>() };
             try
             {
                 bool bRet = false;
@@ -83,7 +108,8 @@ namespace DatabaseInterface
                     {
                         companyDto = null;
                     }
-                }else { companyDto = null; }
+                }
+                else { companyDto = null; }
             }
             catch (Exception e)
             {
@@ -108,15 +134,19 @@ namespace DatabaseInterface
                 destination.AddressDto.City = source.Address.City;
                 destination.AddressDto.Country = source.Address.Country;
                 destination.AddressDto.Location = source.Address.Location;
-                destination.AddressDto.State = source.Address.Location;
+                destination.AddressDto.State = source.Address.State;
             }
             if (destination.MenuListDto != null && source.CompanyMenuList != null)
             {
-                foreach (var menuDto in source.CompanyMenuList)
+                foreach (var menu in source.CompanyMenuList)
                 {
-                    var menu = new MenuDto();
-                    menu.MenuId = menuDto.MenuId;
-                    destination.MenuListDto.Add(menu);
+                    var menuDto = new MenuDto();
+                    menuDto.MenuId = menu.MenuId;
+                    menuDto.Logo = menu.Menu.Logo;
+                    menuDto.Name = menu.Menu.Name;
+                    menuDto.Path = menu.Menu.Path;
+                    menuDto.Style = menu.Menu.Style;
+                    destination.MenuListDto.Add(menuDto);
                 }
             }
 
@@ -143,7 +173,7 @@ namespace DatabaseInterface
                 destination.Address.City = source.AddressDto.City;
                 destination.Address.Country = source.AddressDto.Country;
                 destination.Address.Location = source.AddressDto.Location;
-                destination.Address.State = source.AddressDto.Location;
+                destination.Address.State = source.AddressDto.State;
             }
             if (destination.CompanyMenuList != null && source.MenuListDto != null)
             {

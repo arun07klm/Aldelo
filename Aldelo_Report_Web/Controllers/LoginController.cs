@@ -35,10 +35,16 @@ namespace Aldelo_Report_Web.Controllers
             var validCompanyDto = companyDal.IsValidCompany(companyDto.Username, companyDto.Password);
             if (validCompanyDto != null)
             {
-                Session["LoggedInUser"] = validCompanyDto.Username;
-                return companyDto.PasswordExpireOn <= DateTime.Now
-                      ? RedirectToAction("ValidityExpired", "Home")
-                      : RedirectToAction("Index", "Home");
+                if (validCompanyDto.PasswordExpireOn <= DateTime.Now)
+                {
+                   return RedirectToAction("ValidityExpired", "Home");
+                }
+                else
+                {
+                    Session["LoggedInUser"] = validCompanyDto.Username;
+                    Session["LoggedInCompany"] = validCompanyDto;
+                   return RedirectToAction("Index", "Home");
+                }
             }
             TempData["ErrorMessage"] = "Please check your login credentials.";
             return View();
@@ -48,5 +54,6 @@ namespace Aldelo_Report_Web.Controllers
             Session["LoggedInUser"] = null;
             return RedirectToAction("Login", "Login");
         }
+       
     }
 }

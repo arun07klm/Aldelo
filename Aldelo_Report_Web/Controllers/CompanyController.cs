@@ -66,6 +66,10 @@ namespace Aldelo_Report_Web.Controllers
            
             return GetJson(isCompanySavedSuccessfully);
         }
+        public ActionResult UpdatePassword(CompanyDto companyDto)
+        {
+            return GetJson(companyDal.UpdatePasswordDal(companyDto.CompanyId, companyDto.Password));
+        }
         public ActionResult GetAllMenu()
         {
             return GetJson(menuDal.GetAllMenuDal());
